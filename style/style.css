@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Eurostyle-Normal" sans-serif;
+}
+
+@font-face {
+  font-family: EurostileExtended;
+  src: url(../eurostyle_fonts/EurostileExtended.ttf);
+}
+
+@font-face {
+  font-family: Eurostyle-Normal;
+  src: url(../eurostyle_fonts/EuroStyle-Normal.ttf);
+}
+
+@font-face {
+  font-family: EurostileExtendedBlack;
+  src: url(../eurostyle_fonts/EurostileExtendedBlack.ttf);
+}
+
+.pm-0 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body header {
+  width: 100%;
+  height: 790px;
+  background-image: url(../images/mainImg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+body header nav .container .navBox {
+  width: 100%;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header nav .container .navBox .navBoxleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav .container .navBox .navBoxleft h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+body header nav .container .navBox .navBoxleft img {
+  width: 10px;
+  height: 10px;
+  margin-right: 50px;
+}
+
+body header nav .container .navBox .navBoxRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+body header nav .container .navBox .navBoxRight a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+body header nav .container .navBox .navBoxRight a:nth-child(2) {
+  background-color: #000000;
+  padding: 18.5px 51px;
+}
+
+body header nav .container .navBox .navBoxRight a:nth-child(2):hover {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body header nav .container .navBox .navBoxRight img {
+  width: 24px;
+  height: 24px;
+}
+
+body header .navbar {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding: 5px 0;
+}
+
+body header .navbar .navbarBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .navbar .navbarBox .navbarBoxLeft img {
+  width: 201px;
+  height: 52px;
+}
+
+body header .navbar .navbarBox .navbarBoxRight {
+  margin: 0 auto;
+}
+
+body header .navbar .navbarBox .navbarBoxRight ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  list-style: none;
+  gap: 40px;
+}
+
+body header .navbar .navbarBox .navbarBoxRight ul li a {
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.09em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+body header h1 {
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-top: 177px;
+  margin-bottom: 5px;
+}
+
+body header h2 {
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+body section {
+  background-color: #f1f0eb;
+  padding-top: 87px;
+}
+
+body section .mainSectionBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 54px;
+}
+
+body section .mainSectionBox .mainSectionBoxLeft {
+  width: 658px;
+  height: 640px;
+  position: relative;
+  background-image: url(../images/gelikImg.png);
+  background-repeat: no-repeat;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+body section .mainSectionBox .mainSectionBoxLeft h1 {
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+}
+
+body section .mainSectionBox .mainSectionBoxLeft .btnMain {
+  padding: 24px 44px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+body section .mainSectionBox .mainSectionBoxLeft .btnMain:hover {
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body section .mainSectionBox .mainSectionBoxRight .bgBox_1 {
+  width: 658px;
+  height: 308px;
+  position: relative;
+  background-image: url(../images/diska.png);
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+
+body section .mainSectionBox .mainSectionBoxRight .bgBox_1 h1 {
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+}
+
+body section .mainSectionBox .mainSectionBoxRight .bgBox_1 .btnMain {
+  padding: 24px 44px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+body section .mainSectionBox .mainSectionBoxRight .bgBox_1 .btnMain:hover {
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body section .mainSectionBox .mainSectionBoxRight .bgBox_1:nth-child(2) {
+  background-image: url(../images/bugatti.png);
+  margin-top: 24px;
+}
+/*# sourceMappingURL=style.css.map */

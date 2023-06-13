@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eurostyle-Normal" sans-serif;
+}
+
+@font-face {
+  font-family: EurostileExtended;
+  src: url(../eurostyle_fonts/EurostileExtended.ttf);
+}
+
+@font-face {
+  font-family: Eurostyle-Normal;
+  src: url(../eurostyle_fonts/EuroStyle-Normal.ttf);
+}
+
+@font-face {
+  font-family: EurostileExtendedBlack;
+  src: url(../eurostyle_fonts/EurostileExtendedBlack.ttf);
+}
+
+// .icon {
+//   width: 24px !important;
+//   height: 24px !important;
+//   display: inline-block;
+//   mask-repeat: no-repeat;
+//   mask-size: 100%;
+//   mask-position: center;
+//   -webkit-mask-repeat: no-repeat;
+//   -webkit-mask-size: 100%;
+//   -webkit-mask-position: center;
+//   vertical-align: middle;
+//   background-color: $colorWhite;
+
+//   &.icon-telegram {
+//     mask-image: url("../icons/telegram.svg");
+//     -webkit-mask-image: url("../icons/telegram.svg");
+//   }
+
+//   &.icon-arrow {
+//     mask-image: url("../icons/bottomArrow.svg");
+//     -webkit-mask-image: url("../icons/bottomArrow.svg");
+//   }
+
+// }
+
+$colorBlack: #000000;
+$colorWhite: #ffffff;
+$colorbg: #f1f0eb;
+$colorBlue: #4071cb;
+
+.pm-0 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  header {
+    width: 100%;
+    height: 790px;
+    background-image: url(../images/mainImg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    nav {
+      .container {
+        .navBox {
+          width: 100%;
+          height: 55px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .navBoxleft {
+            display: flex;
+            align-items: center;
+            h2 {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 130%;
+              color: $colorWhite;
+              margin-right: 5px;
+            }
+            img {
+              width: 10px;
+              height: 10px;
+              margin-right: 50px;
+            }
+          }
+          .navBoxRight {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            a {
+              text-decoration: none;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 130%;
+              letter-spacing: 0.02em;
+              color: $colorWhite;
+              &:nth-child(2) {
+                background-color: $colorBlack;
+                padding: 18.5px 51px;
+              }
+              &:nth-child(2):hover {
+                background-color: transparent;
+                border: 1px solid $colorWhite;
+                transition: all 0.5s ease-in-out;
+              }
+            }
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+    .navbar {
+      border-top: 1px solid $colorWhite;
+      border-bottom: 1px solid $colorWhite;
+      padding: 5px 0;
+      .navbarBox {
+        display: flex;
+        align-items: center;
+        .navbarBoxLeft {
+          img {
+            width: 201px;
+            height: 52px;
+          }
+        }
+        .navbarBoxRight {
+          margin: 0 auto;
+          ul {
+            display: flex;
+            align-items: center;
+            color: $colorWhite;
+            list-style: none;
+            gap: 40px;
+            li {
+              a {
+                font-size: 14px;
+                line-height: 130%;
+                letter-spacing: 0.09em;
+                color: $colorWhite;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 49px;
+      line-height: 130%;
+      color: $colorWhite;
+      margin-top: 177px;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 39px;
+      line-height: 130%;
+      color: $colorWhite;
+    }
+  }
+  section {
+    background-color: $colorbg;
+    padding-top: 87px;
+    .mainSectionBox {
+      display: flex;
+      justify-content: space-between;
+      gap: 54px;
+      .mainSectionBoxLeft {
+        width: 658px;
+        height: 640px;
+        position: relative;
+        background-image: url(../images/gelikImg.png);
+        background-repeat: no-repeat;
+        padding: 30px;
+        border-radius: 10px;
+        h1 {
+          font-size: 24px;
+          line-height: 130%;
+          letter-spacing: 0.12em;
+          color: $colorWhite;
+        }
+        .btnMain {
+          padding: 24px 44px;
+          background-color: transparent;
+          border: 1px solid $colorWhite;
+          border-radius: 10px;
+          color: $colorWhite;
+          position: absolute;
+          right: 30px;
+          bottom: 30px;
+          cursor: pointer;
+          backdrop-filter: blur(2px);
+          &:hover {
+            background-color: $colorWhite;
+            color: $colorBlack;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+      .mainSectionBoxRight {
+        .bgBox_1 {
+          width: 658px;
+          height: 308px;
+          position: relative;
+          background-image: url(../images/diska.png);
+          background-repeat: no-repeat;
+          padding: 30px;
+          h1 {
+            font-size: 24px;
+            line-height: 130%;
+            letter-spacing: 0.12em;
+            color: $colorWhite;
+          }
+          .btnMain {
+            padding: 24px 44px;
+            background-color: transparent;
+            border: 1px solid $colorWhite;
+            border-radius: 10px;
+            color: $colorWhite;
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            cursor: pointer;
+            backdrop-filter: blur(2px);
+            &:hover {
+              background-color: $colorWhite;
+              color: $colorBlack;
+              transition: all 0.5s ease-in-out;
+            }
+          }
+          &:nth-child(2) {
+            background-image: url(../images/bugatti.png);
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+}
