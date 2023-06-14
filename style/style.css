@@ -1,24 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Eurostyle-Normal" sans-serif;
-}
-
-@font-face {
-  font-family: EurostileExtended;
-  src: url(../eurostyle_fonts/EurostileExtended.ttf);
-}
-
-@font-face {
-  font-family: Eurostyle-Normal;
-  src: url(../eurostyle_fonts/EuroStyle-Normal.ttf);
-}
-
-@font-face {
-  font-family: EurostileExtendedBlack;
-  src: url(../eurostyle_fonts/EurostileExtendedBlack.ttf);
 }
 
 .pm-0 {
@@ -30,6 +16,11 @@
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  background-color: #f1f0eb;
 }
 
 body header {
@@ -175,12 +166,18 @@ body header h2 {
   color: #ffffff;
 }
 
-body section {
-  background-color: #f1f0eb;
+body .headerSection {
   padding-top: 87px;
+  position: relative;
 }
 
-body section .mainSectionBox {
+body .headerSection .catchBtn {
+  position: absolute;
+  top: -42px;
+  left: 39%;
+}
+
+body .headerSection .mainSectionBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +187,7 @@ body section .mainSectionBox {
   gap: 54px;
 }
 
-body section .mainSectionBox .mainSectionBoxLeft {
+body .headerSection .mainSectionBox .mainSectionBoxLeft {
   width: 658px;
   height: 640px;
   position: relative;
@@ -200,14 +197,14 @@ body section .mainSectionBox .mainSectionBoxLeft {
   border-radius: 10px;
 }
 
-body section .mainSectionBox .mainSectionBoxLeft h1 {
+body .headerSection .mainSectionBox .mainSectionBoxLeft h1 {
   font-size: 24px;
   line-height: 130%;
   letter-spacing: 0.12em;
   color: #ffffff;
 }
 
-body section .mainSectionBox .mainSectionBoxLeft .btnMain {
+body .headerSection .mainSectionBox .mainSectionBoxLeft .btnMain {
   padding: 24px 44px;
   background-color: transparent;
   border: 1px solid #ffffff;
@@ -221,14 +218,14 @@ body section .mainSectionBox .mainSectionBoxLeft .btnMain {
           backdrop-filter: blur(2px);
 }
 
-body section .mainSectionBox .mainSectionBoxLeft .btnMain:hover {
+body .headerSection .mainSectionBox .mainSectionBoxLeft .btnMain:hover {
   background-color: #ffffff;
   color: #000000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-body section .mainSectionBox .mainSectionBoxRight .bgBox_1 {
+body .headerSection .mainSectionBox .mainSectionBoxRight .bgBox_1 {
   width: 658px;
   height: 308px;
   position: relative;
@@ -237,14 +234,14 @@ body section .mainSectionBox .mainSectionBoxRight .bgBox_1 {
   padding: 30px;
 }
 
-body section .mainSectionBox .mainSectionBoxRight .bgBox_1 h1 {
+body .headerSection .mainSectionBox .mainSectionBoxRight .bgBox_1 h1 {
   font-size: 24px;
   line-height: 130%;
   letter-spacing: 0.12em;
   color: #ffffff;
 }
 
-body section .mainSectionBox .mainSectionBoxRight .bgBox_1 .btnMain {
+body .headerSection .mainSectionBox .mainSectionBoxRight .bgBox_1 .btnMain {
   padding: 24px 44px;
   background-color: transparent;
   border: 1px solid #ffffff;
@@ -258,15 +255,344 @@ body section .mainSectionBox .mainSectionBoxRight .bgBox_1 .btnMain {
           backdrop-filter: blur(2px);
 }
 
-body section .mainSectionBox .mainSectionBoxRight .bgBox_1 .btnMain:hover {
+body .headerSection .mainSectionBox .mainSectionBoxRight .bgBox_1 .btnMain:hover {
   background-color: #ffffff;
   color: #000000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-body section .mainSectionBox .mainSectionBoxRight .bgBox_1:nth-child(2) {
+body .headerSection .mainSectionBox .mainSectionBoxRight .bgBox_1:nth-child(2) {
   background-image: url(../images/bugatti.png);
   margin-top: 24px;
+}
+
+body .centerSection {
+  padding-top: 140px;
+}
+
+body .centerSection .container h1 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+}
+
+body .centerSection .container .flexBoxBtn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+body .centerSection .container .flexBoxBtn button {
+  width: 50%;
+  height: 65px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+
+body .centerSection .container .flexBoxBtn button:nth-child(2) {
+  border-radius: 0px 10px 10px 0px;
+}
+
+body .centerSection .container .flexBoxBtn .active {
+  color: #f1f0eb;
+  background-color: #4071cb;
+}
+
+body .centerSection .container .flexBoxCars {
+  margin-top: 62px;
+}
+
+body .centerSection .container .flexBoxCars .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .centerSection .container .flexBoxCars .row .col img {
+  width: 192px;
+  height: 72px;
+}
+
+body .centerSection .container .flexBoxCars .row .col h6 {
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #4071cb;
+  text-align: center;
+  margin-top: 10px;
+}
+
+body .centerSection .container .flexBoxCars .centerBox {
+  text-align: center;
+  margin-top: 40px;
+}
+
+body .centerSection .container .flexBoxCars .centerBox .showAllBtn {
+  padding: 11px 86px;
+  border: 1px solid #4071cb;
+  border-radius: 8px;
+  color: #4071cb;
+  cursor: pointer;
+}
+
+body .centerSection .container .flexBoxCars .centerBox .showAllBtn:hover {
+  background-color: #4071cb;
+  color: #ffffff;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+body .hotDealsSection {
+  padding-bottom: 60px;
+}
+
+body .hotDealsSection .centerSectionHeader .container .textDeal {
+  font-size: 30px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 34px;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col {
+  width: 325px;
+  height: 325px;
+  padding: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  margin-bottom: 34px;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col:hover {
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col:hover .card-body h1 {
+  color: #f1f0eb;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col:hover .sumBtn {
+  background-color: transparent;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col .card-header .card-nav h1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col .card-header span {
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.12em;
+  color: #4071cb;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col .card-body h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col .card-body .dealsImg {
+  width: 223px;
+  height: 111px;
+  position: absolute;
+  top: 31%;
+  left: 13%;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  margin-top: 110px;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col .card-footer .card-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col .sumBtn {
+  width: 100%;
+  padding: 15px 0px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-size: 12px;
+  letter-spacing: 0.17em;
+  font-weight: 400;
+}
+
+body .hotDealsSection .centerSectionHeader .container .row .col .sumBtn:hover {
+  background-color: #4071cb;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+body .maserattiSection .container .boxMaseratti img {
+  width: 100%;
+  height: 100%;
+}
+
+body .footerSection {
+  padding: 160px 0px 110px 0px;
+}
+
+body .footerSection .container .textPay {
+  font-size: 30px;
+  line-height: 145%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+body .footerSection .container .row {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "col-1 col-2 col-2 col-3" "col4 col5 col5 col5";
+  gap: 13px;
+}
+
+body .footerSection .container .row .col-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: col-1;
+}
+
+body .footerSection .container .row .col-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: col-2;
+}
+
+body .footerSection .container .row .col-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: col-3;
+}
+
+body .footerSection .container .row .col-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: col4;
+}
+
+body .footerSection .container .row .col-5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: col5;
+}
+
+body .footerSection .container .row .col {
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+  padding: 20px 6px 20px 20px;
+}
+
+body .footerSection .container .row .col:nth-child(2) p {
+  width: 71%;
+}
+
+body .footerSection .container .row .col:nth-child(5) .flexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 87px;
+}
+
+body .footerSection .container .row .col:nth-child(5) .flexBox .flexBtn {
+  padding: 14px 78px;
+  border: 1px solid #4f4f4f;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body .footerSection .container .row .col:nth-child(5) .flexBox .flexBtn:hover {
+  background-color: #4071cb;
+  color: #ffffff;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+body .footerSection .container .row .col h1 {
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  margin-bottom: 40px;
+}
+
+body .footerSection .container .row .col h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  margin-bottom: 8px;
+}
+
+body .footerSection .container .row .col p {
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
 }
 /*# sourceMappingURL=style.css.map */
