@@ -67,7 +67,9 @@ body {
     height: 780px;
     background-image: url(../images/mainImg.png);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: top;
+    border-radius: 0px 0px 30px 30px;
     nav {
       .container {
         .navBox {
@@ -170,6 +172,7 @@ body {
       color: $colorWhite;
     }
   }
+//   
   section {
     background-color: $colorbg;
     padding-top: 87px;
